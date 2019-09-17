@@ -1,6 +1,6 @@
 import flask
 from flask import request, jsonify
-#import cv2
+import cv2
 import os
 import base64
 
