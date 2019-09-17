@@ -16,7 +16,7 @@ def home():
 
 @app.route('/encodeimage', methods=['GET'])
 def encodingimage():
-	image = open('test1.jpg', 'rb')
+	image = open('four.jpg', 'rb')
 	image_read = image.read()
 	image_64_encode = base64.urlsafe_b64encode(image_read)
 
@@ -48,9 +48,11 @@ def decodingimage():
 		status = "undetected"
 
 	os.remove('testimage.jpg')
+	responseData = {'message': status,'status':200}
 
 
-	return status
+
+	return jsonify(responseData)
 
 
 if __name__=='__main__':
