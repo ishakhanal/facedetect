@@ -38,10 +38,14 @@ def decodingimage():
 	face_detector = dlib.get_frontal_face_detector()
 
 	img = face_detector(image)
+	length = len(img)
 
 	if img:
+		if length == 1:
+			status = "detected"
 
-		status = "detected"
+		else:
+			status = "multiple face"
 
 	else:
 
