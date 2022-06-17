@@ -1,7 +1,7 @@
 boost==0.1
 cmake==0.7.1
 boost-py
-numpy==1.12.1
+numpy==1.21.0
 opencv-contrib-python
 dlib>=19.3.0
 face_recognition_models
